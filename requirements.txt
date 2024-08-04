@@ -1,1 +1,3 @@
-Currently only supports IP:PORT Format for now
+selenium
+webdriver-manager
+colorama
