@@ -1,1 +1,1 @@
-[https://cdn.logojoy.com/wp-content/uploads/20210422095037/discord-mascot.png](https://discord.gg/R2yMb44ZuW)
+[![Join our Discord](https://i.imgur.com/JyLzyP7.png)](https://discord.gg/R2yMb44ZuW)
