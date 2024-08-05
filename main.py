@@ -84,7 +84,7 @@ def main():
     #clan_tag = input("Enter clan tag for bots, without brackets (optional, press Enter to skip): ").strip()
     username = input("Enter bot name: ").strip()
     
-    #username = f"[{clan_tag}] TerBot" if clan_tag else "TerBot"
+    #username = f"[{clan_tag}] TerriBot Github" if clan_tag else "TerriBot Github"
     
     while True:
         try:
