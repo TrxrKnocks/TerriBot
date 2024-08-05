@@ -56,7 +56,9 @@ def launch_browser(proxy=None, username="TerBot.bar"):
     driver.set_window_size(1336, 768)
     driver.get("https://territorial.io")
 
-    driver.find_element(By.ID, "inputUsername").send_keys(username)
+    input = driver.find_element(By.ID, "inputUsername")
+    input.clear()
+    input.send_keys(username)
     print(f"{Fore.GREEN}Info:{Style.RESET_ALL} Set username '{username}' in {threading.current_thread().name}")
 
     driver.find_element(By.CSS_SELECTOR, "button[style*='background-color: rgba(0, 70, 0, 0.85);']").click()
@@ -67,8 +69,8 @@ def launch_browser(proxy=None, username="TerBot.bar"):
 
 def select_game(driver, game_id):
     game_coords = {
-        1: (450, 200), 2: (600, 200), 3: (750, 200),
-        4: (900, 200), 5: (450, 300), 6: (600, 300), 7: (700,300)
+        1: (450, 200), 2: (600, 200), 3: (800, 200),
+        4: (450, 400), 5: (600, 400), 6: (800, 400), 7: (700,300)
     }
 
     if game_id in game_coords:
@@ -79,9 +81,10 @@ def select_game(driver, game_id):
         print(f"{Fore.RED}Error:{Style.RESET_ALL} Invalid game ID in {threading.current_thread().name}")
 
 def main():
-    clan_tag = input("Enter clan tag for bots (optional, press Enter to skip): ").strip()
+    #clan_tag = input("Enter clan tag for bots, without brackets (optional, press Enter to skip): ").strip()
+    username = input("Enter bot name: ").strip()
     
-    username = f"[{clan_tag}] TerBot" if clan_tag else "TerBot"
+    #username = f"[{clan_tag}] TerBot" if clan_tag else "TerBot"
     
     while True:
         try:
@@ -92,7 +95,7 @@ def main():
         except ValueError:
             print("Invalid input. Enter a number.")
     
-    use_proxies = input("Use proxies? (y/n): ").strip().lower() == 'y'
+    use_proxies = input("Use proxies? (y/N): ").strip().lower() == 'y'
     
     drivers = []
     threads = []
