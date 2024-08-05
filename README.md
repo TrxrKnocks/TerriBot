@@ -1,4 +1,4 @@
-# TerriBot
+# TerriBot (The First OPEN-SOURCE Territorial.io botting tool) 
 
 [![Join our Discord](https://i.imgur.com/JyLzyP7.png)](https://discord.gg/R2yMb44ZuW)
 
