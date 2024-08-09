@@ -1,9 +1,10 @@
 # TerriBot (The First OPEN-SOURCE Territorial.io botting tool) 
+## If anyone can make selenium go to into https://hide.me/en/proxy first and typing https://territorial.io there, instead going directly into territorial.io please do that and create a pull request.
 
 [![Join our Discord](https://i.imgur.com/JyLzyP7.png)](https://discord.gg/R2yMb44ZuW)
 
 TerriBot is a basic botting tool for territorial.io that adds multiple bots to your game. It uses Selenium, which consumes a lot of resources, so it’s not very efficient. However, it still works. If the project reaches 25 stars, I might recode it to communicate with the game's WebSocket server instead of using Selenium windows for each client, which would significantly improve efficiency and allow users to run virtually an unlimited number of bots.
-**Please Note:** Tabs are limited to 10 per if YOU'RE NOT USING PROXIES and 9 if you want to play yourself. This is tab limit set by david per ip, can't do much about it.
+**Please Note:** You can't really use this tool without proxies.
 
 ## Features
 
